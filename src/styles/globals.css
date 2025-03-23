@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 4px;
+}
+
+body {
+  @apply font-satoshi;
+  font-family: 'Satoshi', sans-serif;
+  scroll-behavior: smooth;
+  background-color: theme('colors.background'); /* Default background */
+  color: theme('colors.primary'); /* Default text color */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the scrollbar container */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Style the scrollbar track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+/* Style the scrollbar thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the thumb */
+  border-radius: 10px; /* Optional: Rounded corners for the thumb */
+  border: 3px solid #f0f0f0; /* Optional: Add a border around the thumb */
+}
+
+/* Optional: Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color when the user hovers over the thumb */
+}
+
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+a {
+  font-weight: 600 !important;
+  text-decoration:underline;
+}
+
+a:hover{
+  text-decoration:underline
+};
+
+/* .marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+} */
+
+.marquee-container {
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+.marquee {
+  display: flex;
+  gap: 2rem;
+  width: max-content; /* Ensures content stretches beyond the viewport */
+  animation: marquee-scroll 20s linear infinite;
+}
+
+
+@keyframes marquee-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 100px;
+  height: auto;
+}
+
+
+
