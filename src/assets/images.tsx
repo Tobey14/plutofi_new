@@ -24,6 +24,7 @@ const images = {
   about2: "/images/about2.svg",
   about3: "/images/about3.svg",
   about_down: "/images/about_down.svg",
+  about_top: "/images/about-top.png",
   
 };
 export default images;

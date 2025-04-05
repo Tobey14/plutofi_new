@@ -14,6 +14,10 @@ body {
   color: theme('colors.primary'); /* Default text color */
 }
 
+.swiper-button-prev, .swiper-button-next{
+  color:white !important;
+}
+
 * {
   margin: 0;
   padding: 0;

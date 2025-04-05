@@ -20,7 +20,7 @@ export default function TopSection() {
             </div>
 
             <div className="flex justify-center order-1 md:order-2">
-                <img src={images.about} alt={"Dispatch Man"} className="w-full md:w-fit" />
+                <img src={images.about_top} alt={"Dispatch Man"} className="w-full md:w-fit" />
             </div>
         </div>        
      

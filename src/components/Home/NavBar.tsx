@@ -24,7 +24,7 @@ export default function Navbar() {
           </div>
 
           <div className="hover:text-plutofi no-underline font-medium cursor-pointer" onClick={navigateToAbout}>
-            <p>About</p>
+            <p>About Us</p>
           </div>
 
           <div className="hover:text-plutofi no-underline font-medium cursor-pointer" onClick={() => console.log('going to blog')}>
@@ -32,11 +32,11 @@ export default function Navbar() {
           </div>
 
           <div className="hover:text-plutofi no-underline font-medium cursor-pointer" onClick={navigateToContact}>
-            <p>Contact</p>
+            <p>Contact Us</p>
           </div>
 
           <div className="hover:text-plutofi no-underline font-medium cursor-pointer" onClick={navigateToFaq}>
-            <p>FAQ</p>
+            <p>FAQs</p>
           </div>
         </div>
 
@@ -62,14 +62,14 @@ export default function Navbar() {
           }`}
       >
         <div className="px-4 pt-2 pb-8 flex flex-col items-center space-y-6">
-          <div className="hover:text-plutofi no-underline font-medium cursor-pointer" onClick={navigateToAbout}>
+          <div className="hover:text-plutofi no-underline font-medium cursor-pointer" onClick={() => {navigateToAbout(); setIsOpen(false)}}>
             <p>About Us</p>
           </div>
-          <div className="hover:text-plutofi no-underline font-medium cursor-pointer" onClick={navigateToAbout}>
+          <div className="hover:text-plutofi no-underline font-medium cursor-pointer" onClick={() => {navigateToContact(); setIsOpen(false)}}>
             <p>Contact Us</p>
           </div>
-          <div className="hover:text-plutofi no-underline font-medium cursor-pointer" onClick={navigateToFaq}>
-            <p>FAQ's</p>
+          <div className="hover:text-plutofi no-underline font-medium cursor-pointer" onClick={() => { navigateToFaq(); setIsOpen(false)}}>
+            <p>FAQs</p>
           </div>
           <Button className="rounded-lg hover:bg-plutofi hover:opacity-80">
             Download the App
