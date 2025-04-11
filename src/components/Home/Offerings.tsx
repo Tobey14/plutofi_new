@@ -5,17 +5,17 @@ const offerings = [
     {
         title: "🚀 One Cart, Multiple Stores, One Checkout!",
         description: "Build your cart across different stores and check out in one go!",
-        image: "/images/offerings1.svg", // Replace with actual URLs
+        image: "/images/offering1.png", // Replace with actual URLs
     },
     {
         title: "🔒 Shop with Confidence, We’ve Got You Covered!",
         description: "Secure payments, trusted stores, and guaranteed delivery.",
-        image: "/images/offerings.svg",
+        image: "/images/offering2.png",
     },
     {
         title: "🎉 The Future of Shopping is Here!",
         description: "PlutoFi is revolutionizing how you shop and ship.",
-        image: "/images/offerings2.svg",
+        image: "/images/offering3.png",
     },
 ];
 

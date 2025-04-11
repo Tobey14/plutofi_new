@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Newsletter() {
-  const [email, setEmail] = useState("sureboytobi@gmail.com");
+  const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState("");
 
